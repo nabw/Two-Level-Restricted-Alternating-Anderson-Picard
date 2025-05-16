@@ -158,6 +158,6 @@ Iterations:31
 Solution time:4.774393081665039
 
 ```
-The first column shows the type of iteration (*A*nderson or *R*ichardson/Picard). Then follow the iteration number, absolute and relative errors, and at the end we see whether adaptivity was used in that iteration.
+The first column shows the type of iteration (*A*nderson or *R*ichardson/Picard). Then follow the iteration number, absolute and relative errors, and at the end we see whether adaptivity was used in that iteration. Better time measurements can be obtained by running the solution process twice _within the same script_, as Julia uses JIT (Just-In-Time) compilation, so the first run is commonly slower (and referred to as _warm-up_). If we add a warm-up run to the same Poisson example, we get an execeution time of 0.074 seconds, which is more reasonable for that problem size.  _Note: that some robustness to an increase of DoFs is seen as the residual used considers an Incomplete Cholesky preconditioner._
 
 All tests were executed using the `tests/aap-tests/jl` script, whose results are reported in our paper. 

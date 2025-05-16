@@ -110,7 +110,7 @@ optional arguments:
   -h, --help            show this help message and exit
 
 ```
-Then solving the Poisson problem in 3D with 30 elements per side using AAP(10,2) with subselect constant adaptivity of a 10% simply run
+Then to solve the Poisson problem in 3D with 30 elements per side using AAP(10,2) with subselect constant adaptivity of a 10% simply run
 
 ```
 > julia --project=. tests/poisson.jl -N 100 -M 10 -P 2 -S 0.1 --adapt subselect_constant --verbose

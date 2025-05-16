@@ -3,7 +3,7 @@ Julia library for executing the tests in the work "Two-level Sketching Alternati
 ## Installation
 This is a Julia library, and so to use it:
 
-- [Download Julia](https://julialang.org/downloads/). 
+- [Download Julia](https://julialang.org/downloads/)
 - Clone the library
 ```
 git clone https://github.com/nabw/Two-Level-Restricted-Alternating-Anderson-Picard.git
@@ -18,7 +18,7 @@ julia --project=. -e "using Pkg; Pkg.instantiate()"
 julia --project=. tests/runtests.jl
 ```
 
-That's is. If the tests run Ok, you are ready to go.
+That's it. If the tests gave no errors, you are ready to go.
 
 ## Algorithm interface
 

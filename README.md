@@ -35,8 +35,7 @@ To run a code using the residual form, let's consider an example scalar problem 
 $$ b - Ax = 0 . $$
 
 ```
-using AAP
-using LinearAlgebra
+using AAP, LinearAlgebra
 A = diagm([1.0,2.0,3.0])
 b = [1.0,1.0,1.0]
 
@@ -53,8 +52,7 @@ println("Iterations: $(out[2])")
 The same can be writing the iteration as a fixed-point problem. 
 
 ```
-using AAP
-using LinearAlgebra
+using AAP, LinearAlgebra
 A = diagm([1.0,2.0,3.0])
 b = [1.0,1.0,1.0]
 

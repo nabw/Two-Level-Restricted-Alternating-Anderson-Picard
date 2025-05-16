@@ -44,7 +44,7 @@ function f(r, x)
     r .= b - A*x
 end
 
-x0 = np.rand(3)
+x0 = rand(3)
 out = AAP.aap!(x0, f; maxiter=10, p=2)
 println("Solution: $(out[1])")
 println("Iterations: $(out[2])")
@@ -62,7 +62,7 @@ function f(g, x, w)
     g .= x + w * (b - A*x)
 end
 
-x0 = np.rand(3)
+x0 = rand(3)
 out = AAP.aap!(x0, f; mode=:picard, maxiter=10, p=2)
 println("Solution: $(out[1])")
 println("Iterations: $(out[2])")

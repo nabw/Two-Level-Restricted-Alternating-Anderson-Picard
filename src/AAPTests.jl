@@ -68,7 +68,7 @@ function getArguments()
             default = 1000
             arg_type = Int
         "--adapt"
-            help = "Adaptive type none|subselect_power|subselect_const|random_power|random_const"
+            help = "Adaptive type none|subselect_power|subselect_constant|random_power|random_constant"
             default = "none"
         "--qr-update"
             help = "Set QR update type classic|efficient"
